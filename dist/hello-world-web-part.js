@@ -1734,7 +1734,7 @@ function registerStyles(styleArray) {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "JPst")(false);
 // Module
-exports.push([module.i, "body{background-color:red}", ""]);
+exports.push([module.i, "", ""]);
 
 
 
