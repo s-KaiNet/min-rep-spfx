@@ -1,0 +1,163 @@
+{
+  "module": {
+    "rules": [
+      {
+        "use": [
+          {
+            "loader": "C:\\Users\\Caio\\Desktop\\DEV\\SHAREPOINT\\min-problem\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js",
+            "options": {
+              "async": true
+            }
+          },
+          {
+            "loader": "C:\\Users\\Caio\\Desktop\\DEV\\SHAREPOINT\\min-problem\\node_modules\\css-loader\\dist\\cjs.js"
+          },
+          {
+            "loader": "C:\\Users\\Caio\\Desktop\\DEV\\SHAREPOINT\\min-problem\\node_modules\\postcss-loader\\src\\index.js",
+            "options": {
+              "ident": "postcss",
+              "minimize": true,
+              "plugins": [
+                null
+              ]
+            }
+          }
+        ],
+        "test": {}
+      },
+      {
+        "use": [
+          {
+            "loader": "C:\\Users\\Caio\\Desktop\\DEV\\SHAREPOINT\\min-problem\\node_modules\\@microsoft\\loader-cased-file\\lib\\index.js",
+            "options": {
+              "name": "[name:lower]_[hash].[ext]"
+            }
+          }
+        ],
+        "test": {}
+      },
+      {
+        "use": [
+          {
+            "loader": "C:\\Users\\Caio\\Desktop\\DEV\\SHAREPOINT\\min-problem\\node_modules\\html-loader\\index.js"
+          }
+        ],
+        "test": {}
+      },
+      {
+        "test": {},
+        "enforce": "pre",
+        "use": "C:\\Users\\Caio\\Desktop\\DEV\\SHAREPOINT\\min-problem\\node_modules\\source-map-loader\\index.js",
+        "exclude": [
+          {}
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "vue-loader"
+          }
+        ]
+      },
+      {
+        "resourceQuery": {},
+        "loader": "ts-loader",
+        "options": {
+          "appendTsSuffixTo": [
+            {}
+          ]
+        }
+      },
+      {
+        "resourceQuery": {},
+        "use": [
+          {
+            "loader": "C:\\Users\\Caio\\Desktop\\DEV\\SHAREPOINT\\min-problem\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js",
+            "options": {
+              "async": true
+            }
+          },
+          {
+            "loader": "css-loader",
+            "options": {
+              "modules": true,
+              "localIdentName": "[local]_[sha1:hash:hex:8]"
+            }
+          },
+          "sass-loader"
+        ]
+      }
+    ],
+    "noParse": [
+      {}
+    ]
+  },
+  "resolve": {
+    "alias": {},
+    "modules": [
+      "node_modules",
+      "lib"
+    ]
+  },
+  "context": "C:\\Users\\Caio\\Desktop\\DEV\\SHAREPOINT\\min-problem",
+  "devtool": "source-map",
+  "mode": "development",
+  "entry": {
+    "hello-world-web-part": "C:\\Users\\Caio\\Desktop\\DEV\\SHAREPOINT\\min-problem\\lib\\webparts\\helloWorld\\HelloWorldWebPart.js"
+  },
+  "externals": [
+    "@microsoft/sp-lodash-subset",
+    "@microsoft/sp-core-library",
+    "@microsoft/sp-office-ui-fabric-core",
+    "@microsoft/decorators",
+    "@microsoft/office-ui-fabric-react-bundle",
+    "@microsoft/sp-diagnostics",
+    "@microsoft/sp-dynamic-data",
+    "@microsoft/sp-polyfills",
+    "@microsoft/sp-http",
+    "@microsoft/sp-page-context",
+    "@microsoft/sp-loader",
+    "@microsoft/sp-component-base",
+    "@microsoft/sp-property-pane",
+    "@microsoft/sp-webpart-base",
+    "min-problem",
+    "react",
+    "react-dom",
+    "vue",
+    "HelloWorldWebPartStrings",
+    "PropertyControlStrings"
+  ],
+  "output": {
+    "hashFunction": "md5",
+    "chunkFilename": "chunk.[name]_[contenthash].js",
+    "filename": "[name].js",
+    "library": "7b05ef64-6c14-4982-8d7a-dbe9a0d1973e_0.0.1",
+    "libraryTarget": "amd",
+    "path": "C:\\Users\\Caio\\Desktop\\DEV\\SHAREPOINT\\min-problem\\dist",
+    "devtoolModuleFilenameTemplate": "webpack:///../[resource-path]",
+    "devtoolFallbackModuleFilenameTemplate": "webpack:///../[resource-path]?[hash]"
+  },
+  "optimization": {
+    "moduleIds": "hashed"
+  },
+  "plugins": [
+    {
+      "options": {
+        "scriptName": {
+          "name": "\\/[name](_[a-z0-9-]+)*\\\\.js",
+          "isTokenized": true
+        }
+      }
+    },
+    {
+      "definitions": {
+        "process.env.NODE_ENV": "\"dev\"",
+        "DEBUG": true,
+        "DEPRECATED_UNIT_TEST": false,
+        "DATACENTER": true
+      }
+    },
+    {}
+  ]
+}
