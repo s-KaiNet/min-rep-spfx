@@ -59,9 +59,6 @@ const transformConfig = function (initialWebpackConfig) {
   ];
 
   initialWebpackConfig.plugins.push(vuePlugin);
-
-  initialWebpackConfig.module.rules.splice(-2); // remove default sass-loaders
-
   initialWebpackConfig.module.rules.push(...loadersConfigs);
 
   return initialWebpackConfig;

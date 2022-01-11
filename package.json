@@ -45,6 +45,7 @@
     "gulp-sequence": "1.0.0",
     "gulp-stylelint": "^13.0.0",
     "sass-loader": "^8.0.2",
+    "spfx-fast-serve-helpers": "^1.11.9",
     "spfx-uifabric-themes": "^0.8.0",
     "stylelint": "^13.8.0",
     "stylelint-config-css-modules": "^2.2.0",
@@ -53,7 +54,6 @@
     "ts-loader": "^6.2.1",
     "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.12",
-    "webpack-bundle-analyzer": "^3.8.0",
-    "spfx-fast-serve-helpers": "~1.11.0"
+    "webpack-bundle-analyzer": "^3.8.0"
   }
 }
